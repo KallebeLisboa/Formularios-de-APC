@@ -62,3 +62,10 @@ def executar_comando(comando):
     else:
         print("Comando desconhecido.")
 
+# Função para ler múltiplos comandos (para testes automatizados)
+def ler_comandos():
+    while True:
+        comando = input().strip()
+        if comando == "Hasta la vista, beibe!":
+            break
+        executar_comando(comando)
